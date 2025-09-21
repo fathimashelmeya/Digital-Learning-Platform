@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Learning Platform</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="manifest" href="manifest.json" />
+  </head>
+  <body>
+    <header>
+      <h1>📘 Digital Learning Platform</h1>
+      <nav>
+        <button onclick="showPage('home')">Home</button>
+        <button onclick="showPage('lessons')">Lessons</button>
+        <button onclick="showPage('literacy')">Digital Literacy</button>
+        <button onclick="showPage('progress')">My Progress</button>
+      </nav>
+    </header>
+
+    <main id="content">
+      <!-- Home -->
+      <section id="home" class="page active">
+        <h1>Welcome Students!</h1>
+        <p>
+        Education should reach every corner — that’s why this platform brings you 
+        <b>simple, interactive lessons</b> in Mathematics, Science, and Language.  
+        All lessons are available <b>offline</b>, so you can keep learning without 
+        worrying about internet connectivity.  
+        </p>
+
+        <p>
+        📚 Learn at your own pace  
+        🎥 Watch video lessons anytime  
+        🧑‍🏫 Designed for rural students and teachers  
+        </p>
+
+        <p>
+        Choose your subject below and begin your journey of learning!
+        </p>
+      </section>
+
+      <!-- Lessons -->
+      <section id="lessons" class="page">
+        <h2>Lessons</h2>
+        <ul>
+          <li>Mathematics - <a href="lesson1.mp4" target="_blank"> <button id="math-start">Start</button></li>
+          <li>Science - <a href="lesson1.mp4" target="_blank"> <button id="Science-start">Start</button></li>
+          <li>Language - <a href="lesson1.mp4" target="_blank">  <button id="Language-start">Start</button></li>
+        </ul>
+      </section>
+
+      <!-- Digital Literacy -->
+      <section id="literacy" class="page">
+        <h2>Digital Literacy</h2>
+        <p>Learn how to use smartphones, apps, and the internet safely.</p>
+      </section>
+
+      <!-- Progress -->
+       <section id="progress-section" class="page" style="display:none;">
+        <h2>My Progress</h2>
+        <p>Here you can see your completed lessons:</p>
+        <ul>
+        <li>Mathematics: <span id="math-status">Not Completed ❌</span></li>
+        <li>Science: <span id="science-status">Not Completed ❌</span></li>
+        <li>Language: <span id="language-status">Not Completed ❌</span></li>
+        </ul>
+       </section>
+      
+      <!-- Lessons -->
+      <section id="lessons" class="page">
+        <h2>Lessons</h2>
+        <p>Maths Lesson 1: Basic Multiplication</p>
+        <video width="320" height="240" controls>
+          <source src="lesson1.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
